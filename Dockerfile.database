@@ -4,9 +4,6 @@ ARG NODEJS_VERSION="22"
 ## Base image for all building stages
 FROM node:${NODEJS_VERSION}-slim AS base
 
-# Ajoutez cette ligne ici pour augmenter la mémoire disponible pour Node.js
-ENV NODE_OPTIONS="--max-old-space-size=3072"
-
 ARG USE_CN_MIRROR
 
 ENV DEBIAN_FRONTEND="noninteractive"
