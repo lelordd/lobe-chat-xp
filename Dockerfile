@@ -4,7 +4,6 @@ ARG NODEJS_VERSION="22"
 ## Base image for all building stages
 FROM node:${NODEJS_VERSION}-slim AS base
 
-
 ARG USE_CN_MIRROR
 
 ENV DEBIAN_FRONTEND="noninteractive"
